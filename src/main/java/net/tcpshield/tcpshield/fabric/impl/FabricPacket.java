@@ -15,7 +15,7 @@ public class FabricPacket implements PacketProvider  {
 
     @Override
     public String getPayloadString() {
-        return ((HandshakeC2SPacketAccessor) handshake).getAddress();
+        return ((HandshakeC2SPacketAccessor)(Object) handshake).getAddress();
     }
 
     @Override
